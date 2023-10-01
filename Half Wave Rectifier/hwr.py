@@ -37,7 +37,7 @@ def max_load_current(Rf: float, Rs: float, Rl: float, Vm: float) ->tuple:
   else:
     return Result("max_load_current ", Vm/(Rf+Rs+Rl))
 
-def DC_current(Idc: float, Im: float) ->tuple:
+def dc_current(Idc: float, Im: float) ->tuple:
   """
   This function can calculate the Average DC Current(Idc) in a circuit.
   In all cases negative sign shows the opposite direction of current or voltage.
@@ -51,7 +51,7 @@ def DC_current(Idc: float, Im: float) ->tuple:
   """
   return Result("Idc ", Im*0.318)
 
-def DC_voltage(Vm: float) ->tuple:
+def dc_voltage(Vm: float) ->tuple:
   """
   This function can calculate the Average DC Voltage(Vdc) in a circuit.
   In all cases negative sign shows the opposite direction of current or voltage.
